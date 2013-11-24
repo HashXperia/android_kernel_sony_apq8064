@@ -1,4 +1,4 @@
-if ARCH_MSM
+git if ARCH_MSM
 
 menu "MSM SoC Type"
 
@@ -1666,6 +1666,12 @@ config MSM_CPU_FREQ_MIN
 	default 245760
 
 endif # CPU_FREQ_MSM
+
+config MSM_SLEEPER
+	bool "Limit max frequency while screen is off"
+	default y
+	help
+	  Limit max frequency while screen is off. 
 
 config CPU_VOLTAGE_TABLE
 	bool "Enable CPU Voltage Table via sysfs for adjustements"
