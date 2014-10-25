@@ -373,7 +373,7 @@ AFLAGS_MODULE   = $(MODFLAGS)
 LDFLAGS_MODULE  = -T $(srctree)/scripts/module-common.lds
 CFLAGS_KERNEL   = -mfpu=neon-vfpv4 \
                   -mtune=cortex-a15 \
-                  -O2 \
+                  -O3 \
                   -fgcse-las \
                   -fpredictive-commoning \
 		  -Wno-error=implicit-function-declaration
@@ -382,7 +382,7 @@ CFLAGS_KERNEL	+= -fgraphite -floop-flatten -floop-parallelize-all -ftree-loop-li
 endif
 AFLAGS_KERNEL	= -mfpu=neon-vfpv4 \
                   -mtune=cortex-a15 \
-                  -O2 \
+                  -O3 \
                   -fgcse-las \
                   -fpredictive-commoning \
 		  -Wno-error=implicit-function-declaration
