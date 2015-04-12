@@ -1,4 +1,4 @@
-git if ARCH_MSM
+if ARCH_MSM
 
 menu "MSM SoC Type"
 
